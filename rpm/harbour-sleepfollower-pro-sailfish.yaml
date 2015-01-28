@@ -1,4 +1,4 @@
-Name: harbour-helloworld-pro-sailfish
+Name: harbour-sleepfollower-pro-sailfish
 Summary: Helloworld Pro for Sailfish
 Version: 0.6
 Release: 6
@@ -44,7 +44,7 @@ SubPackages:
       Requires:
       - qt5-qtdeclarative-import-qttest
       Files:
-        - '%{_bindir}/tst-harbour-helloworld-pro-sailfish'
-        - '%{_datadir}/tst-harbour-helloworld-pro-sailfish/*.qml'
+        - '%{_bindir}/tst-harbour-sleepfollower-pro-sailfish'
+        - '%{_datadir}/tst-harbour-sleepfollower-pro-sailfish/*.qml'
         # Script for starting tests on emulator and device
-        - '%{_datadir}/tst-harbour-helloworld-pro-sailfish/*.sh'
+        - '%{_datadir}/tst-harbour-sleepfollower-pro-sailfish/*.sh'

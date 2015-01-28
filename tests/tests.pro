@@ -1,7 +1,7 @@
 TEMPLATE = app
 
 # The name of your app
-TARGET = tst-harbour-helloworld-pro-sailfish
+TARGET = tst-harbour-sleepfollower-pro-sailfish
 
 CONFIG += qmltestcase
 
