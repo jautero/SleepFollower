@@ -1,13 +1,13 @@
 Name: harbour-sleepfollower-pro-sailfish
-Summary: Helloworld Pro for Sailfish
-Version: 0.6
-Release: 6
+Summary: Sleep Follower for Sailfish
+Version: 0.1
+Release: 1
 Group: Qt/Qt
-License: Public domain except for the icon
+License: mit
 Sources:
 - '%{name}-%{version}.tar.bz2'
 Description: |-
-  Missing Helloworld for Sailfish OS. Use this project for a good app start
+  Sleep diary app for Sailfish
 Configure: none
 Builder: qtc5
 QMakeOptions:
@@ -34,10 +34,10 @@ PkgBR: []
 
 SubPackages:
     - Name: test
-      Summary: Tests for the Helloworld Pro for Sailfish
+      Summary: Tests for the Sleep Follower for Sailfish
       Group: Qt/Qt
       Description: |-
-        Tests package for the Helloworld Pro for Sailfish
+        Tests package for the Sleep Follower for Sailfish
       AutoDepend: true
       PkgConfigBR:
       - Qt5QuickTest
