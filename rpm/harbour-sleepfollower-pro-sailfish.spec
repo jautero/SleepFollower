@@ -12,11 +12,11 @@ Name:       harbour-sleepfollower-pro-sailfish
 %{!?qtc_qmake5:%define qtc_qmake5 %qmake5}
 %{!?qtc_make:%define qtc_make make}
 %{?qtc_builddir:%define _builddir %qtc_builddir}
-Summary:    Helloworld Pro for Sailfish
-Version:    0.6
-Release:    6
+Summary:    Sleep Follower for Sailfish
+Version:    0.1
+Release:    1
 Group:      Qt/Qt
-License:    Public domain except for the icon
+License:    mit
 Source0:    %{name}-%{version}.tar.bz2
 Source100:  harbour-sleepfollower-pro-sailfish.yaml
 Requires:   libsailfishapp
@@ -27,17 +27,17 @@ BuildRequires:  pkgconfig(sailfishapp)
 BuildRequires:  desktop-file-utils
 
 %description
-Missing Helloworld for Sailfish OS. Use this project for a good app start
+Sleep diary app for Sailfish
 
 %package test
-Summary:    Tests for the Helloworld Pro for Sailfish
+Summary:    Tests for the Sleep Follower for Sailfish
 Group:      Qt/Qt
 Requires:   %{name} = %{version}-%{release}
 Requires:   qt5-qtdeclarative-import-qttest
 BuildRequires:  pkgconfig(Qt5QuickTest)
 
 %description test
-Tests package for the Helloworld Pro for Sailfish
+Tests package for the Sleep Follower for Sailfish
 
 %prep
 %setup -q -n %{name}-%{version}
@@ -86,6 +86,5 @@ desktop-file-install --delete-original       \
 %{_bindir}/tst-harbour-sleepfollower-pro-sailfish
 %{_datadir}/tst-harbour-sleepfollower-pro-sailfish/*.qml
 %{_datadir}/tst-harbour-sleepfollower-pro-sailfish/*.sh
-%attr(0755,-,-) %{_datadir}/tst-harbour-sleepfollower-pro-sailfish/*.sh
 # >> files test
 # << files test

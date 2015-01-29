@@ -19,7 +19,7 @@ OTHER_FILES = \
 # how to kill this particular Creator's plugin
 #    ../rpm/harbour-sleepfollower-pro-sailfish.yaml \
     ../rpm/harbour-sleepfollower-pro-sailfish.spec \
-    qml/pages/SailCalc.qml \
-    qml/main.qml
+    qml/main.qml \
+    qml/pages/SleepFollower.qml
 
 INCLUDEPATH += $$PWD

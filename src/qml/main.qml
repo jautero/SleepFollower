@@ -11,10 +11,10 @@ ApplicationWindow
     readonly property string _APP_VERSION: appVersion
     readonly property string _APP_BUILD_NUMBER: appBuildNum
 
-    initialPage: sailCalcComponent
+    initialPage: sleepFollowerComponent
     Component {
-        id: sailCalcComponent
-        SailCalc { version: _APP_VERSION; buildNum: _APP_BUILD_NUMBER }
+        id: sleepFollowerComponent
+        SleepFollower { version: _APP_VERSION; buildNum: _APP_BUILD_NUMBER }
     }
 }
 
