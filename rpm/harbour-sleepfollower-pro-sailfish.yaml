@@ -48,3 +48,4 @@ SubPackages:
         - '%{_datadir}/tst-harbour-sleepfollower-pro-sailfish/*.qml'
         # Script for starting tests on emulator and device
         - '%{_datadir}/tst-harbour-sleepfollower-pro-sailfish/*.sh'
+        - '%attr(0755,-,-) %{_datadir}/tst-harbour-sleepfollower-pro-sailfish/*.sh'

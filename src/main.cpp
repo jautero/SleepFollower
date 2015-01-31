@@ -7,7 +7,7 @@
 #include <QQuickView>
 #include <QQmlEngine>
 #include <QGuiApplication>
-
+#include <sleepstore.h>
 
 int main(int argc, char *argv[])
 {
@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
     view->rootContext()->setContextProperty("appVersion", APP_VERSION);
     view->rootContext()->setContextProperty("appBuildNum", APP_BUILDNUM);
 
-
+    qmlRegisterType<SleepStore>("fi.iki.jautero.sleepfollower",1,0,"SleepStore");
 //    Here's how you will add QML components whenever you start using them
 //    Check https://github.com/amarchen/Wikipedia for a more full example
 //    view->engine()->addImportPath(SailfishApp::pathTo("qml/components").toString());

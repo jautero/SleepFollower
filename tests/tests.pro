@@ -3,6 +3,7 @@ TEMPLATE = app
 # The name of your app
 TARGET = tst-harbour-sleepfollower-pro-sailfish
 
+include(../src/src.pri)
 CONFIG += qmltestcase
 
 TARGETPATH = /usr/bin
@@ -22,7 +23,6 @@ DEFINES += DEPLOYMENT_PATH=\"\\\"\"$${DEPLOYMENT_PATH}/\"\\\"\"
 SOURCES += main.cpp
 
 # C++ headers
-HEADERS +=
 
 INSTALLS += target qml extra
 
@@ -32,6 +32,5 @@ qml.files = *.qml
 OTHER_FILES += \
     tst_RealUiTest.qml \
     tst_NonUiTests.qml
-
 
 

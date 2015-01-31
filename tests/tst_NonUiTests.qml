@@ -19,29 +19,21 @@ import QtTest 1.0
 import "../harbour-sleepfollower-pro-sailfish/qml/pages"
 
 TestCase {
-    name: "SailCalcTest"
-
-    SailCalc {
-        id: bigCalc
+    name: "inBedTest"
+    SleepFollower {
+        id: testFollower
     }
 
-    function test_addition() {
-        bigCalc._aText = "7"
-        bigCalc._bText = "8"
-        compare(bigCalc._sumText, "A+B = 15", "7 + 8 should make 15")
+    function test_defaultValue() {
+        compare(testFollower._sleepStore.inBed,false,"default value should be false");
     }
-
-    function test_subtractionAfterMenuAction() {
-        bigCalc._subtrText = ""
-        bigCalc._aText = "19"
-        bigCalc._bText = "9"
-
-        // mouseClick will not work, because no window is shown. And not even created maybe
-        // mouseClick(bigCalc._subtractMenuAction)
-
-        // click simulation via signals works just fine, however
-        bigCalc._subtractMenuAction.clicked(null)
-        compare(bigCalc._subtrText, "A-B = 10", "expected 19 - 9 to equal 10")
+    function test_setTrue() {
+        testFollower._sleepStore.inBed = true;
+        compare(testFollower._sleepStore.inBed,true,"value should be set to true");
+    }
+    function test_setFalse() {
+        testFollower._sleepStore.inBed = false;
+        compare(testFollower._sleepStore.inBed,false,"value should be set to false");
     }
 }
 

@@ -3,6 +3,8 @@ TEMPLATE=app
 # Must start with "harbour-"
 TARGET = harbour-sleepfollower-pro-sailfish
 
+include(src.pri)
+
 # In the bright future this config line will do a lot of stuff to you
 CONFIG += sailfishapp
 
@@ -21,5 +23,3 @@ OTHER_FILES = \
     ../rpm/harbour-sleepfollower-pro-sailfish.spec \
     qml/main.qml \
     qml/pages/SleepFollower.qml
-
-INCLUDEPATH += $$PWD
