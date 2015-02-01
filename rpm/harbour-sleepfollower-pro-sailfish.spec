@@ -86,5 +86,6 @@ desktop-file-install --delete-original       \
 %{_bindir}/tst-harbour-sleepfollower-pro-sailfish
 %{_datadir}/tst-harbour-sleepfollower-pro-sailfish/*.qml
 %{_datadir}/tst-harbour-sleepfollower-pro-sailfish/*.sh
+%attr(0755,-,-) %{_datadir}/tst-harbour-sleepfollower-pro-sailfish/*.sh
 # >> files test
 # << files test

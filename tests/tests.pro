@@ -6,6 +6,8 @@ TARGET = tst-harbour-sleepfollower-pro-sailfish
 include(../src/src.pri)
 CONFIG += qmltestcase
 
+QT += testlib
+
 TARGETPATH = /usr/bin
 target.path = $$TARGETPATH
 
@@ -32,5 +34,8 @@ qml.files = *.qml
 OTHER_FILES += \
     tst_RealUiTest.qml \
     tst_NonUiTests.qml
+
+HEADERS += \
+    sleepstoretest.h
 
 

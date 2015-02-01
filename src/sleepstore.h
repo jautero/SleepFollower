@@ -3,6 +3,8 @@
 
 #include <QObject>
 
+class SleepStoreTest;
+
 class SleepStore : public QObject
 {
     Q_OBJECT
@@ -17,7 +19,8 @@ public slots:
 
 private:
     bool m_inBed;
-
+    friend class SleepStoreTest;
 };
+
 
 #endif // SLEEPSTORE_H
