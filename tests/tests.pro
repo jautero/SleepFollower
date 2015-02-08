@@ -22,7 +22,8 @@ extra.files = runTestsOnDevice.sh
 DEFINES += DEPLOYMENT_PATH=\"\\\"\"$${DEPLOYMENT_PATH}/\"\\\"\"
 
 # C++ sources
-SOURCES += main.cpp
+SOURCES += main.cpp \
+    sleepstoretest.cpp
 
 # C++ headers
 
