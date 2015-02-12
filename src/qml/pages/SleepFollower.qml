@@ -23,6 +23,7 @@ Page {
     property alias _goToBedMenuAction: goToBedMenuAction
     property alias _getUpMenuAction: getUpMenuAction
     property alias _sleepStore: sleepStore
+    property alias _status: status
 
     // To enable PullDownMenu, place our content in a SilicaFlickable
     SilicaFlickable {
@@ -51,6 +52,10 @@ Page {
             spacing: Theme.paddingLarge
             PageHeader {
                 title: "Sleep Follower"
+            }
+            Label {
+                id: status
+                text: sleepStore.inBed ? "In Bed" : "Up"
             }
         }
         PushUpMenu {

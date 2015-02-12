@@ -23,12 +23,14 @@ ApplicationWindow {
         function test_goToBed() {
             uiSleepFollower._goToBedMenuAction.clicked(null);
             compare(uiSleepFollower._sleepStore.inBed,true,"inBed should be true");
+            compare(uiSleepFollower._status.text,"In Bed")
         }
 
         function test_getUp() {
             uiSleepFollower._sleepStore.inBed=true;
             uiSleepFollower._getUpMenuAction.clicked(null);
             compare(uiSleepFollower._sleepStore.inBed,false,"inBed should be false");
+            compare(uiSleepFollower._status.text,"Up")
         }
 
     }
