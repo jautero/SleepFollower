@@ -11,6 +11,7 @@ private slots:
     void testPropertySet();
     void testPropertyGet();
     void testNotify();
+    void testSleeptime();
     void cleanup() { if (testObject) { delete testObject; testObject = 0; } }
 private:
     SleepStore *testObject;

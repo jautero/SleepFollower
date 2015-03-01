@@ -57,6 +57,12 @@ Page {
                 id: status
                 text: sleepStore.inBed ? "In Bed" : "Up"
             }
+            Label {
+                width: parent.width
+                id: sleeptime
+                text: sleepStore.sleepTime
+                font.pixelSize: width/sleepStore.sleepTime.length
+            }
         }
         PushUpMenu {
             id: pushUpMenu
